@@ -1,3 +1,5 @@
+package org.example;
+
 public class Product {
    private String name;
     private double price;
@@ -20,7 +22,6 @@ public class Product {
     public int getQuantity() {
         return quantity;
     }
-
     public void setPrice(double price) {
         this.price = price;
     }
