@@ -3,8 +3,8 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class FridayDiscount extends BaseDiscount {
-    public FridayDiscount(Discount discount) {
-        super(discount);
+    public FridayDiscount(Discount nextDiscount) {
+        super(nextDiscount);
     }
 
     @Override
