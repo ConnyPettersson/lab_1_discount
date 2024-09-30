@@ -28,7 +28,7 @@ public abstract class BaseDiscount implements Discount {
     public String getDescription(Product product) {
         String description = "";
         if (isApplicable(product)) {
-            description = "Discount applies: " + calculateDiscount(product);
+            description = "Discount applies: " + calculateDiscount(product) + " kr.";
         }
         if (nextDiscount != null) {
             description += "\n" + nextDiscount.getDescription(product);
