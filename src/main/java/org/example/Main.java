@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Product milk = new Product("Milk", 20, 7);
+        Product milk = new Product("Milk", 20, 8);
         Product bread = new Product("Bread", 30, 2);
 
         Discount discountChain = new FridayDiscount(
