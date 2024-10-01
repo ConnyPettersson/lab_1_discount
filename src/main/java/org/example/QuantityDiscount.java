@@ -15,4 +15,9 @@ public class QuantityDiscount extends BaseDiscount {
         int quantityDiscount = 5;
         return 10.0 * product.getQuantity();
     }
+
+    @Override
+    protected String getCurrentDescription(Product product) {
+        return "10 kr per product for quantity of 5 or more";
+    }
 }

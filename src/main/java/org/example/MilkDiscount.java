@@ -14,4 +14,10 @@ public class MilkDiscount extends BaseDiscount{
     protected double calculateDiscount(Product product) {
         return product.getPrice() * 0.05;
     }
+
+    @Override
+    protected String getCurrentDescription(Product product) {
+        return "5% discount for Milk product";
+    }
+
 }

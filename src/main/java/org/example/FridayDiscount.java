@@ -16,4 +16,9 @@ public class FridayDiscount extends BaseDiscount {
     protected double calculateDiscount(Product product) {
         return product.getPrice() * 0.10;
     }
+
+    @Override
+    protected String getCurrentDescription(Product product) {
+        return "10% discount for Friday";
+    }
 }

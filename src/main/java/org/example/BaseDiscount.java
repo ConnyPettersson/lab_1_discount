@@ -28,11 +28,13 @@ public abstract class BaseDiscount implements Discount {
     public String getDescription(Product product) {
         String description = "";
         if (isApplicable(product)) {
-            description = "Discount applies: " + calculateDiscount(product) + " kr.";
+            description = getCurrentDescription(product) +  ": " + calculateDiscount(product) + " kr.";
         }
         if (nextDiscount != null) {
             description += "\n" + nextDiscount.getDescription(product);
         }
         return description;
     }
+
+    protected abstract String getCurrentDescription(Product product);
 }

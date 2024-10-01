@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("\nBread discounts:");
         System.out.println(discountChain.getDescription(bread));
-        double breadDiscount= discountChain.apply(bread);
+        double breadDiscount = discountChain.apply(bread);
         System.out.println("Total discount for bread: " + breadDiscount + " kr.");
     }
 }
