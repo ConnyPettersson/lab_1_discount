@@ -7,7 +7,7 @@ public class Main {
 
         Discount discountChain = new FridayDiscount(
                 new MilkDiscount(
-                        new QuantityDiscount(null)
+                        new QuantityDiscount()
                 )
         );
 

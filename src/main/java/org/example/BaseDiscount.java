@@ -3,6 +3,10 @@ package org.example;
 public abstract class BaseDiscount implements Discount {
     protected Discount nextDiscount;
 
+    public BaseDiscount() {
+        this.nextDiscount = null;
+    }
+
     public BaseDiscount(Discount nextDiscount) {
         this.nextDiscount = nextDiscount;
     }
